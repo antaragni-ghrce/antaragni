@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url('../images/register_bg.jpg');
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+}
+
+.container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+}
+
+.brand span{
+  color:#fff;
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.company-info{
+  background:#cfcfcf;
+  border-radius: 40px;
+}
+
+.company-info h3, .company-info ul{
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.contact{
+  border-radius: 40px;
+  background:#2D3032;
+}
+
+.contact form input, .contact form textarea{
+  width:100%;
+  padding:1.5em;
+}
+
+.contact form button{
+  margin-left: 40%;
+  font-size: 25px;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 0.5s ease-out;
+}
+
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    width: 75px;
+    height:75px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+ul li:nth-child(2) a:hover {
+    background-color: #e4405f;
+}
+ul li:nth-child(3) a:hover {
+    background-color: #0077B5;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+ul li .fab {
+    color: #000000;
+    font-size: 25px;
+    line-height: 75px;
+    transition: .5s;
+}
+ul li .fab:hover {
+    color: #ffffff;
+}

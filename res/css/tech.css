@@ -1,0 +1,235 @@
+
+@font-face {
+  font-family: "anurati";
+  src: url("../fonts/Anurati-Regular.otf");
+  font-style : normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "ailerons";
+  src: url("../fonts/Ailerons-Regular.otf");
+  font-style : normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "blanka";
+  src: url("../fonts/Blanka-Regular.otf");
+  font-style : normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "f_aqua";
+  src: url("../fonts/aqua.ttf");
+  font-style : normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-style : normal;
+  font-weight: 800;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+
+#antaragni_logo
+{
+  height: 100px;
+  width: 230px;
+}
+
+#navbar-collapse
+{
+  width: 500px;
+
+}
+
+li.nav-item{
+  color: white;
+}
+
+.blinking
+{
+  font-weight: 800;
+  animation: blinkingText 0.9s infinite;
+}
+
+@keyframes blinkingText
+{
+  0%
+  {
+    color: white;
+  }
+
+  100%
+  {
+    color: black;
+  }
+}
+
+.nav-link:hover
+{
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#tech{margin-top:2%;
+
+}
+
+
+.caption1
+{
+    width:100%;
+    max-width: 100%;
+    position: absolute;
+    margin-top:6%;
+    z-index: 100;
+	font-family: uncial Antiqua;
+    color: white;
+    text-transform: uppercase;
+
+}
+.caption1 h2{
+    font-size: 4.6vw;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow:.1rem .1rem .8rem black;
+}
+
+h1{
+	
+font-family: uncial Antiqua;
+font-weight: 700;
+ letter-spacing: .3rem;
+    text-shadow:.1rem .1rem .8rem black;
+	color:white;
+}
+
+.eventcard
+{
+	
+background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+margin-top:4%;
+
+position:relative;
+}
+
+.card
+{
+	
+
+	font-family: uncial Antiqua;
+	color:black;
+	
+}
+
+.card-text a
+{
+	font-family: uncial Antiqua;
+
+}
+
+
+
+
+
+
+
+hr.new
+{
+	border-color:lightblue;
+}
+
+
+.contact{
+  height: 55vh;
+  background-image: url('../images/contact_bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-details-wrapper{
+  margin: 50px 100px;
+  padding: 25px 50px;
+  border: 2px solid #fff;
+  font-family: montserrat;
+  font-weight: 600;
+  line-height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-details-wrapper h2{
+  width: 200px;
+  padding: 7px 0px;
+  font-family: ailerons;
+  color: #fff;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.social-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+.social-menu ul li .fab {
+    color: #000000;
+    font-size: 40px;
+    line-height: 75px;
+    transition: .5s;
+}
+.social-menu ul li .fab:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 75px;
+    height:75px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #0077B5;
+}
+
+#particles-js{
+	
+	height:60vh;
+	width:200vh;
+	z-index:10;
+	margin-top:-35%;
+}
