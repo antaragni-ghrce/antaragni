@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Antaragni 2K19</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+
+
+
+    <!--[if lt IE 9]>
+                <script src="js/html5shiv.js"></script>
+                <script src="js/respond.min.js"></script>
+        <![endif]-->
+    <link rel="shortcut icon" href="logo.png">
+
+
+
+</head>
+<!--/head-->
+
+<body style="overflow-x: hidden">
+    <header id="header" role="banner">
+        <div class="main-nav">
+            <div class="container">
+                <div class="header-top">
+                    <div class="pull-right social-icons">
+                      
+                        <a href="http://www.facebook.com/antaragni2k19 ">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="http://www.instagram.com/antaragni_2019">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                       
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="navbar-header ">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img class="img-responsive" src="images/logo.png" alt="logo" style="max-width: 39% ;margin-top: 34px; margin-left: 52px">
+                        </a>
+                    </div>
+                    <style>
+                        .blinking {
+                            animation: blinkingText 0.9s infinite;
+                        }
+
+                        @keyframes blinkingText {
+                            0% {
+                                color: white;
+                            }
+                            49% {
+                                color: yellow;
+                            }
+                            60% {
+                                color: transparent;
+                            }
+                            80% {
+                                color: red;
+                            }
+                            100% {
+                                color: white;
+                            }
+
+                        }
+                    </style>
+                    <div class="collapse navbar-collapse ">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="scroll active" href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="#event">Event</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="no-scroll" href="team/team.html">Team</a>
+                            </li>
+
+                            <li>
+                                <a class="no-scroll" href="Gallery/gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                                <a class="scroll" href="#contact">Contact</a>
+                            </li>
+                            <li class="">
+                                <a class="no-scroll" href="https://goo.gl/forms/FPbi36Sn4dx3dW2I2">
+                                    <span class="blinking">Register</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--/#header-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row>.column {
+            padding: 0 8px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+        }
+
+        /* Modal Content */
+
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* The Close Button */
+
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        img {
+            margin-bottom: -4px;
+        }
+
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+
+
+    <section id="home">
+        <div id="main-slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
+                    <div class="carousel-caption">
+                        <h3 class="blinking" style="color:red;font-weight: 700">register for our next event </h3>
+                        <h4 class="blinking"> </h4>
+                        <a href="https://goo.gl/forms/FPbi36Sn4dx3dW2I2">
+                            <span class="blinking">Hurry Up!!!!</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">
+                    <div class="carousel-caption">
+                        <h3 class="blinking" style="color:red;font-weight: 700">register for our next event </h3>
+                        <h4 class="blinking"></h4>
+                        <a href="https://goo.gl/forms/FPbi36Sn4dx3dW2I2">
+                            <span class="blinking">Hurry Up!!!! </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">
+                    <div class="carousel-caption">
+                        <h3 class="blinking" style="color:red;font-weight: 700">register for our next event </h3>
+                        <h4 class="blinking"></h4>
+                        <a href="https://goo.gl/forms/FPbi36Sn4dx3dW2I2">
+                            <span class="blinking">Hurry Up!!!!</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--/#home-->
+
+
+
+
+    <section id="explore">
+        <div class="container">
+            <div class="row">
+                <div class="watch">
+                    <img class="img-responsive" src="images/watch.png" alt="">
+                </div>
+                <div class="col-md-4 col-md-offset-2 col-sm-5">
+                    <h2 style="font-weight: bolder">Technical & Cultural Fest Starts in </h2>
+                </div>
+                <div class="col-sm-7 col-md-6">
+                    <ul id="countdown">
+                        <li>
+                            <span class="days time-font">00</span>
+                            <p>days </p>
+                        </li>
+                        <li>
+                            <span class="hours time-font">00</span>
+                            <p class="">hours </p>
+                        </li>
+                        <li>
+                            <span class="minutes time-font">00</span>
+                            <p class="">minutes</p>
+                        </li>
+                        <li>
+                            <span class="seconds time-font">00</span>
+                            <p class="">seconds</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="https://goo.gl/forms/FPbi36Sn4dx3dW2I2">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Register</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--/#explore-->
+
+    <section id="event">
+        <div class="">
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <div id="event-carousel" class="carousel slide" data-interval="false">
+                        <h2 class="heading" style="font-weight: bolder">THE ROCKING Events</h2>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-2">
+
+
+                                        <div class="card" style="width: 12rem;">
+                                            <img src="images/event/anat.jpg" class="card-img-top" alt="" width="150px">
+                                            <div class="card-body">
+
+                                                <a href="images/event/antaragni/antaragni.html" style="margin:auto" class="btn btn-primary">View Events...</a>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-sm-2">
+
+
+                                        <div class="card" style="width: 12rem;">
+                                            <img src="images/event/tech.jpg" class="card-img-top" alt="" width="150px">
+                                            <div class="card-body">
+
+                                                <a href="images/event/technorion/technorion.html"  style="margin:auto" class="btn btn-primary">View Events...</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-2">
+
+                                        <div class="card" style="width: 12rem;">
+                                            <img src="images/event/para.jpg" class="card-img-top" alt="" width="150px">
+                                            <div class="card-body">
+
+                                                <a href="images/event/parakram/parakram.html"  style="margin:auto" class="btn btn-primary">View Events...</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-2">
+
+
+                                        <div class="card" style="width: 12rem;">
+                                            <img src="images/event/spandan.jpg" class="card-img-top" alt="" width="150px">
+                                            <div class="card-body">
+
+                                                <a href="images/event/spandan/spandan.html" class="btn btn-primary"  style="margin:auto">View Events...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+
+
+                                        <div class="card" style="width: 12rem;">
+                                            <img src="images/event/e-Cell logo.png" class="card-img-top" alt="" width="150px">
+                                            <div class="card-body">
+
+                                                <a href="images/event/ecell/ecell.html" class="btn btn-primary"  style="margin:auto">View Events...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="guitar">
+                    <img class="img-responsive" src="images/guitar.png" alt="guitar">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#event-->
+
+    <section id="about">
+        <div class="guitar2">
+            <img class="img-responsive" src="images/guitar12.png" alt="guitar">
+        </div>
+        <div class="about-content">
+            <div style="margin-left:-145px">
+                <h2 style="font-weight: bolder">About Antaragni</h2>
+                <p style="font-weight: 600">Antaragni is a National level Techno - Cultural Fest Organized by G.H.R.C.E Nagpur, one of the pearls in
+                    the splendid tiaras of The Great Maharashtra hereby takes a stride ...</p>
+                <a href="#explore" class="btn btn-primary">View Date & Place
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--/#about-->
+<section>
+  <div style="position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;">
+	<iframe  width="425" height="344" src="https://www.youtube.com/embed/RfyQXRPz4SI?autoplay=1" allow='autoplay' frameborder="0" allowfullscreen 
+			autoplay style="position:absolute; top:0; left:0; width:100%; height:100%;">
+	</iframe>
+	
+</div>
+    </section>
+	<section>
+  <div style="position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;">
+	
+	  <iframe  width="425" height="344" src="https://www.youtube.com/embed/vT9WA9-SbJw?autoplay=1" allow='autoplay' frameborder="0" allowfullscreen 
+			autoplay style="position:absolute; top:0; left:0; width:100%; height:100%;">
+	</iframe>
+</div>
+    </section>
+    <section id="twitter">
+        <div id="twitter-feed" class="carousel slide" data-interval="false">
+            <div class="twit">
+                <!--       <img class="img-responsive" src="images/twit.png" alt="twit" >-->
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="text-center carousel-inner center-block">
+                        <div class="item ">
+                            <img src="images/twitter/smslider1.jpg" alt="">
+                            <p>Desire is the key to motivation, but it's determination and commitment to an unrelenting pursuit
+                                of your goal - a commitment to excellence - that will enable you to attain the success you
+                                seek. </p>
+                            <a style="font-weight: bolder">Dr. Preeti Bajaj</a>
+                        </div>
+                        <div class="item active">
+                            <img src="images/twitter/smslider2.jpg" alt="">
+                            <p> The will to win, the desire to succeed, the urge to reach your full potential... these are the
+                                keys that will unlock the door to personal excellence.</p>
+                            <a style="font-weight: bolder">Shri Sunilji Raisoni</a>
+                        </div>
+
+                    </div>
+                    <a class="twitter-control-left" href="#twitter-feed" data-slide="prev">
+                        <i class="fa fa-angle-left" style="font-size:50px"></i>
+                    </a>
+                    <a class="twitter-control-right" href="#twitter-feed" data-slide="next">
+                        <i class="fa fa-angle-right" style="font-size:50px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#twitter-feed-->
+    <!--
+        <section id="sponsor">
+            <div id="sponsor-carousel" class="carousel slide" data-interval="false">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <h2>Sponsors</h2>			
+                            <a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left" style="font-size:50px"></i></a>
+                            <a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right" style="font-size:50px"></i></a>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <ul>
+                                        <!--<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+                                        --</ul>
+                                </div>
+                                <div class="item">
+                                    <ul>
+                                        <!--<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+                                        <li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+                                        --	</ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>				
+                </div>
+                <div class="light">
+                    <img class="img-responsive" src="images/light.png" alt="">
+                </div>
+            </div>
+        </section><!--/#sponsor-->
+
+    <section id="contact">
+        <div id="map">
+            <div id="gmap-wrap" style="overflow: hidden;">
+               	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14888.734079617625!2d79.0034903!3d21.1052484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4fd4cb2d05b49c7d!2sG.+H.+Raisoni+College+of+Engineering!5e0!3m2!1sen!2sin!4v1547739286619"
+		 width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	
+
+            </div>
+        </div>
+        <!--/#map-->
+        <div class="contact-section">
+            <div class="ear-piece">
+                <img class="img-responsive" src="images/ear-piece.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-sm-offset-4">
+                        <div class="contact-text">
+                            <h3 style="color: #FFFFFF">Contact</h3>
+                            <address style="color: #FFFFFF">
+                                Ankit Agrawal (Technorion President) E-mail: antaragni@raisoni.net
+                                <br> Phone: +91 8889 758456 (Ankit)
+                                <br> Phone: +91 7447 562720 (Harsh)
+                                <br> Phone: +91 7038 339453 (Aman)
+                            </address>
+                        </div>
+                        <div class="contact-address">
+                            <h3 style="color: #FFFFFF">Contact</h3>
+                            <address style="color: #FFFFFF">
+                                G H Raisoni College Of Engineering
+                                <br> Crpf gate 3,Hingna
+                                <br> Nagpur
+                                <br> Maharashtra
+                            </address>
+                        </div>
+                    </div>
+                    <style>
+                    
+                    .alert{
+                        text-align: center;
+                        padding: 10px;
+                        background: #79c879;
+                        color:#fff;
+                        margin-bottom: 10px;
+                        display: none;
+                    }
+                    
+                    </style>
+                    <div class="col-sm-5">
+                        <div id="contact-section">
+                            <h3>Send a message</h3>
+                            <div class="alert">Your message has been sent</div>
+                            <div class="status alert alert-success" style="display: none"></div>
+                            <form id="main-contact-form" class="contact-form" name="contact-form" >
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" class="form-control" required="required" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="form-control" required="required" placeholder="Email ID">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Enter your message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary pull-right">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#contact-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p> Copyright &copy;2019
+                    <a target="_blank" href=""> Antaragni 2k19 </a>All Rights Reserved.
+                    <br> Designed by
+                    <a target="_blank" href="https://bit.ly/2HfWY9R">Harsh & Aman Ahmed</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+
+    <script src="main1.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/coundown-timer.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+   
+</body>
+
+</html>
